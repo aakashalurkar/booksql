@@ -1,0 +1,51 @@
+main.js has all components and route paths definitions, basically add all routes here
+
+this.state maintians the state of the component by specifying the input fields
+
+submit login has e
+uname and password have e
+they both are linked
+
+axios uses promises to make calls
+
+login verify logic is written in axios.post
+
+render has cookie load protects route only
+
+return has the ui logic
+
+the inputs onchange have the handlers bound to them which are described above
+
+---
+
+the navbar has links to go to various routes ONLY AFTER a successful login
+
+---
+
+in home.js
+
+to display all students do a ComponentDidMount() and 
+and this.setState displays the response.data
+
+**-the deletebutton has student.studentID to recognize which one to delete
+
+---
+
+in delete button component(where we use props)
+
+onClick is binded to this
+
+when onClick() actually occurs, the student id is fetched from **-
+
+this.props.value assigns it the "DELETE" text value
+
+---
+
+in create.js 
+
+all data is stored in the const.
+
+which is sent to REST route using axios.post (route name, data)
+
+---
+
